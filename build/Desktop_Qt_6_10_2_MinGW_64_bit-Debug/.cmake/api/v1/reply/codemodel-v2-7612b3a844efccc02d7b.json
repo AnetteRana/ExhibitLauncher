@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-53c8e0c54a5d624014f2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ExhibitLauncher",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ExhibitLauncher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ExhibitLauncher-Debug-a14e2699f713e1f0fe4b.json",
+					"name" : "ExhibitLauncher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ExhibitLauncher_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ExhibitLauncher_autogen-Debug-3aedcd59f3eabbada925.json",
+					"name" : "ExhibitLauncher_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ExhibitLauncher_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ExhibitLauncher_autogen_timestamp_deps-Debug-e99837d22dc8c19eeeed.json",
+					"name" : "ExhibitLauncher_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Rana/Desktop/anno_kiosk/ExhibitLauncher/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug",
+		"source" : "C:/Users/Rana/Desktop/anno_kiosk/ExhibitLauncher"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
