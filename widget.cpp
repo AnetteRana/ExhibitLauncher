@@ -12,7 +12,7 @@ Widget::Widget(QWidget *parent)
     this->showFullScreen();
 
     // temp way to quit fullscreen. Should be removed before deployment
-    QShortcut *quitShortcut = new QShortcut(QKeySequence("Ctrl+Q"), this);
+    QShortcut *quitShortcut = new QShortcut(QKeySequence("Ctrl+R"), this);
     connect(quitShortcut, &QShortcut::activated, this, &QWidget::close);
 }
 
