@@ -206,7 +206,8 @@
            </font>
           </property>
           <property name="styleSheet">
-           <string notr="true"/>
+           <string notr="true">background-image: url(:/myResources/annoImage.png);
+</string>
           </property>
           <property name="text">
            <string>Anno: Gjennfunnet Fortid</string>
