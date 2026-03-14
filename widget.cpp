@@ -13,7 +13,6 @@ Widget::Widget(QWidget *parent)
 {
     ui->setupUi(this);
 
-
     this->showFullScreen();
 
     // temp way to quit fullscreen. Should be removed before deployment
@@ -29,7 +28,7 @@ Widget::~Widget()
 // the not really a VR game
 void Widget::on_pushButton_1_pressed()
 {
-    // make sure not to open multiple! (potential issue if game somehow ends up behind menu)
+    // make sure not to open multiple!
     if (myRunningGame) {
         qDebug() << "Game already running";
         return;
@@ -45,7 +44,6 @@ void Widget::on_pushButton_1_pressed()
         myRunningGame->deleteLater();
         myRunningGame = nullptr;
     });
-
 
     // actually start game
     myRunningGame->start(gamePath);

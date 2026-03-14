@@ -202,11 +202,20 @@
           </property>
           <property name="font">
            <font>
-            <pointsize>22</pointsize>
+            <family>Segoe Script</family>
+            <pointsize>11</pointsize>
+            <italic>false</italic>
+            <bold>true</bold>
            </font>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-image: url(:/myResources/annoImage.png);
+           <string notr="true">QPushButton {
+border: none;
+    border-image: url(:/myResources/annoImage.png) 0 0 0 0 stretch stretch;
+
+	font: 700 11pt &quot;Segoe Script&quot;;
+	color: rgb(0, 0, 0);
+}
 </string>
           </property>
           <property name="text">

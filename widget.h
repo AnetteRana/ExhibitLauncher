@@ -2,7 +2,8 @@
 #define WIDGET_H
 
 #include <QWidget>
-#include <QProcess>
+#include <QProcess> // to run other programz
+#include <QTimer> // for input timer checking
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,15 +20,26 @@ public:
     ~Widget();
 
 private slots:
+    void genericButton(int); // idea is to put stuff here rather than the button funcs...
+    // buttons:
     void on_pushButton_1_pressed();
     void on_pushButton_2_pressed();
     void on_pushButton_3_pressed();
     void on_pushButton_4_pressed();
 
+    // functions to control games
+    void startGame(const QString &exePath);
+    void stopGame();
+
 private:
     Ui::Widget *ui;
-    void genericButton(int);
 
-    QProcess *myRunningGame = nullptr;
+    QProcess *myRunningGame = nullptr; // pointer to game process (only one at a time)
+
+    // setting up to make a timer to go back to menu
+    QTimer idleCheckTimer;
+    int idleCheckInterval = 15000; // every 15 seconds
+    uint64_t idleKillThreshhold = 2 * 60 * 1000; // 2 minutes
+
 };
 #endif // WIDGET_H
