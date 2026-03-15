@@ -27,7 +27,7 @@
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>766</width>
+     <width>811</width>
      <height>771</height>
     </rect>
    </property>
@@ -93,7 +93,11 @@
       <item>
        <widget class="QLabel" name="infoText_label">
         <property name="text">
-         <string>Small games and interactive experiences made during a one-weekend &quot;game jam&quot; held each january called Global Game Jam Hamar. In collaboration with ANNO game developers were challenged to incorperate stuff. Can you spot the stuff?</string>
+         <string>Games created during Global Game Jam Hamar, a one-weekend event held every January.
+
+In collaboration with ANNO, developers were challenged to incorporate elements from the museum’s collections into their games.
+
+Can you spot them?</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
@@ -130,7 +134,7 @@
           </property>
           <property name="minimumSize">
            <size>
-            <width>250</width>
+            <width>400</width>
             <height>250</height>
            </size>
           </property>
@@ -142,11 +146,19 @@
           </property>
           <property name="font">
            <font>
-            <pointsize>22</pointsize>
+            <family>Sugar Snow</family>
+            <pointsize>24</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
            </font>
           </property>
+          <property name="styleSheet">
+           <string notr="true">background-image: url(:/myResources/SendOff_image.png);
+font: 24pt &quot;Sugar Snow&quot;;
+color: rgb(50, 35, 136);</string>
+          </property>
           <property name="text">
-           <string>PushButton</string>
+           <string>Send Off</string>
           </property>
          </widget>
         </item>
@@ -160,7 +172,7 @@
           </property>
           <property name="minimumSize">
            <size>
-            <width>250</width>
+            <width>400</width>
             <height>250</height>
            </size>
           </property>
@@ -172,11 +184,25 @@
           </property>
           <property name="font">
            <font>
-            <pointsize>22</pointsize>
+            <family>Sugar Snow</family>
+            <pointsize>11</pointsize>
+            <italic>false</italic>
+            <bold>true</bold>
            </font>
           </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+border: none;
+    border-image: url(:/myResources/TapestryHero_image.png) 0 0 0 0 stretch stretch;
+
+	font: 700 11pt &quot;Sugar Snow&quot;;
+	color: rgb(255, 255, 255);
+}
+
+</string>
+          </property>
           <property name="text">
-           <string>PushButton</string>
+           <string>Tapestry Hero</string>
           </property>
          </widget>
         </item>
@@ -190,7 +216,7 @@
           </property>
           <property name="minimumSize">
            <size>
-            <width>250</width>
+            <width>400</width>
             <height>250</height>
            </size>
           </property>
@@ -221,6 +247,12 @@ border: none;
           <property name="text">
            <string>Anno: Gjennfunnet Fortid</string>
           </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
          </widget>
         </item>
         <item row="0" column="1">
@@ -233,7 +265,7 @@ border: none;
           </property>
           <property name="minimumSize">
            <size>
-            <width>250</width>
+            <width>400</width>
             <height>250</height>
            </size>
           </property>
@@ -245,11 +277,24 @@ border: none;
           </property>
           <property name="font">
            <font>
-            <pointsize>22</pointsize>
+            <family>Segoe Script</family>
+            <pointsize>11</pointsize>
+            <italic>false</italic>
+            <bold>true</bold>
            </font>
           </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+border: none;
+    border-image: url(:/myResources/HamarUnmasked2067_image.png) 0 0 0 0 stretch stretch;
+
+	font: 700 11pt &quot;Segoe Script&quot;;
+	color: rgb(0, 0, 0);
+}
+</string>
+          </property>
           <property name="text">
-           <string>PushButton</string>
+           <string>Hamar Unmasked 2067: The Lady in Mjøsa</string>
           </property>
          </widget>
         </item>

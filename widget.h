@@ -20,16 +20,12 @@ public:
     ~Widget();
 
 private slots:
-    void genericButton(int); // idea is to put stuff here rather than the button funcs...
+
     // buttons:
     void on_pushButton_1_pressed();
     void on_pushButton_2_pressed();
     void on_pushButton_3_pressed();
     void on_pushButton_4_pressed();
-
-    // functions to control games
-    void startGame(const QString &exePath);
-    void stopGame();
 
 private:
     Ui::Widget *ui;
@@ -41,5 +37,10 @@ private:
     int idleCheckInterval = 15000; // every 15 seconds
     uint64_t idleKillThreshhold = 2 * 60 * 1000; // 2 minutes
 
+    // functions to control games
+    void startGame(const QString &exePath);
+    void stopGame();
+
+    void genericButton(int); // idea is to put stuff here rather than the button funcs...
 };
 #endif // WIDGET_H
